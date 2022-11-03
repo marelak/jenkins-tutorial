@@ -4,7 +4,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 retry(5) {
-                    bat 'flakey-deploy.bat'
+                    bat 'echo Hi'
                 }
 
                 timeout(time: 1, unit: 'MINUTES') {
