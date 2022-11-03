@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Deploy') {
             steps {
-                retry(3) {
+                retry(5) {
                     bat 'flakey-deploy.bat'
                 }
 
