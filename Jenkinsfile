@@ -7,8 +7,8 @@ pipeline {
                     bat 'flakey-deploy.bat'
                 }
 
-                timeout(time: 3, unit: 'MINUTES') {
-                    sh 'health-check.bat'
+                timeout(time: 1, unit: 'MINUTES') {
+                    bat 'health-check.bat'
                 }
             }
         }
