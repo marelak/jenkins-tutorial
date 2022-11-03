@@ -8,7 +8,7 @@ pipeline {
                 }
 
                 timeout(time: 1, unit: 'MINUTES') {
-                    bat 'health-check.bat'
+                    bat 'echo Right back at ya'
                 }
             }
         }
